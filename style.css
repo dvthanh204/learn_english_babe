@@ -1,8 +1,8 @@
-/* Import Kid-Friendly Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap');
+/* Import Kid-Friendly Fonts with Perfect Vietnamese Support */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
 
 :root {
-  --font-kids: 'Fredoka', cursive, sans-serif;
+  --font-kids: 'Nunito', sans-serif;
 }
 
 body {

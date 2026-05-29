@@ -227,87 +227,76 @@ const SpeechHelper = {
 // Grade 1 & 2 Data
 const VOCABULARY_DATA_G12 = {
   animals: [
-    { word: 'Giraffe', translation: 'Hươu cao cổ', emoji: '🦒', phonetic: '/dʒɪˈrɑːf/', sentence: 'The giraffe has a long neck.', vietnameseSentence: 'Hươu cao cổ có một chiếc cổ dài.' },
-    { word: 'Dolphin', translation: 'Cá heo', emoji: '🐬', phonetic: '/ˈdɒl.fɪn/', sentence: 'Dolphins are very friendly animals.', vietnameseSentence: 'Cá heo là loài động vật rất thân thiện.' },
-    { word: 'Kangaroo', translation: 'Chuột túi', emoji: '🦘', phonetic: '/ˌkæŋ.ɡərˈuː/', sentence: 'A kangaroo carries its baby in a pouch.', vietnameseSentence: 'Chuột túi mang con của nó trong một chiếc túi.' },
-    { word: 'Octopus', translation: 'Bạch tuộc', emoji: '🐙', phonetic: '/ˈɒk.tə.pəs/', sentence: 'An octopus has eight arms.', vietnameseSentence: 'Bạch tuộc có tám xúc tu.' },
-    { word: 'Crocodile', translation: 'Cá sấu', emoji: '🐊', phonetic: '/ˈkrɒk.ə.daɪl/', sentence: 'Watch out for the green crocodile!', vietnameseSentence: 'Hãy cẩn thận với con cá sấu màu xanh lá!' },
-    { word: 'Butterfly', translation: 'Con bướm', emoji: '🦋', phonetic: '/ˈbʌt.ə.flaɪ/', sentence: 'The butterfly has beautiful colorful wings.', vietnameseSentence: 'Con bướm có đôi cánh nhiều màu sắc xinh đẹp.' },
-    { word: 'Squirrel', translation: 'Con sóc', emoji: '🐿️', phonetic: '/ˈskwɪr.əl/', sentence: 'The squirrel is gathering nuts in the tree.', vietnameseSentence: 'Con sóc đang nhặt các hạt quả ở trên cây.' },
-    { word: 'Penguin', translation: 'Chim cánh cụt', emoji: '🐧', phonetic: '/ˈpeŋ.gwɪn/', sentence: 'Penguins can swim but cannot fly.', vietnameseSentence: 'Chim cánh cụt có thể bơi nhưng không thể bay.' }
+    { word: 'Lion', translation: 'Sư tử', emoji: '🦁', phonetic: '/ˈlaɪ.ən/', sentence: 'The lion is the king of the jungle.', vietnameseSentence: 'Sư tử là chúa tể rừng xanh.' },
+    { word: 'Tiger', translation: 'Con hổ', emoji: '🐯', phonetic: '/ˈtaɪ.ɡər/', sentence: 'The tiger has orange and black stripes.', vietnameseSentence: 'Con hổ có sọc màu cam và đen.' },
+    { word: 'Rabbit', translation: 'Con thỏ', emoji: '🐰', phonetic: '/ˈræb.ɪt/', sentence: 'The rabbit loves eating carrots.', vietnameseSentence: 'Con thỏ thích ăn cà rốt.' },
+    { word: 'Elephant', translation: 'Con voi', emoji: '🐘', phonetic: '/ˈel.ɪ.fənt/', sentence: 'The elephant is very big.', vietnameseSentence: 'Con voi rất to lớn.' },
+    { word: 'Monkey', translation: 'Con khỉ', emoji: '🐒', phonetic: '/ˈmʌŋ.ki/', sentence: 'The monkey likes to swing on trees.', vietnameseSentence: 'Con khỉ thích đu đưa trên cây.' },
+    { word: 'Panda', translation: 'Gấu trúc', emoji: '🐼', phonetic: '/ˈpæn.də/', sentence: 'The panda eats green bamboo.', vietnameseSentence: 'Gấu trúc ăn tre xanh.' },
+    { word: 'Turtle', translation: 'Con rùa', emoji: '🐢', phonetic: '/ˈtɜː.tl̩/', sentence: 'The turtle walks very slowly.', vietnameseSentence: 'Con rùa đi bộ rất chậm chạp.' }
   ],
   fruits: [
-    { word: 'Strawberry', translation: 'Quả dâu tây', emoji: '🍓', phonetic: '/ˈstrɔː.bər.i/', sentence: 'I love strawberry ice cream.', vietnameseSentence: 'Tớ thích kem hương vị dâu tây.' },
-    { word: 'Watermelon', translation: 'Quả dưa hấu', emoji: '🍉', phonetic: '/ˈwɔː.təˌmel.ən/', sentence: 'Watermelon is perfect for hot summer days.', vietnameseSentence: 'Dưa hấu rất hoàn hảo cho những ngày hè nóng nực.' },
-    { word: 'Pineapple', translation: 'Quả dứa / thơm', emoji: '🍍', phonetic: '/ˈpaɪn.æp.l̩/', sentence: 'Pineapples are sweet and have spiky leaves.', vietnameseSentence: 'Quả dứa ngọt và có những chiếc lá gai nhọn.' },
-    { word: 'Dragon fruit', translation: 'Quả thanh long', emoji: '🐉', phonetic: '/ˈdræɡ.ən fruːt/', sentence: 'Dragon fruit is pink on the outside.', vietnameseSentence: 'Quả thanh long có màu hồng ở bên ngoài.' },
-    { word: 'Coconut', translation: 'Quả dừa', emoji: '🥥', phonetic: '/ˈkəʊ.kə.nʌt/', sentence: 'Coconut water is very refreshing.', vietnameseSentence: 'Nước dừa rất sảng khoái để uống.' },
-    { word: 'Avocado', translation: 'Quả bơ', emoji: '🥑', phonetic: '/ˌæv.əˈkɑː.dəʊ/', sentence: 'Avocado is green and very healthy.', vietnameseSentence: 'Quả bơ màu xanh lá và rất tốt cho sức khỏe.' },
-    { word: 'Peach', translation: 'Quả đào', emoji: '🍑', phonetic: '/piːtʃ/', sentence: 'The peach is sweet and soft.', vietnameseSentence: 'Quả đào rất ngọt và mềm mại.' },
-    { word: 'Papaya', translation: 'Quả đu đủ', emoji: '🥭', phonetic: '/pəˈpaɪ.ə/', sentence: 'Papaya has many small black seeds.', vietnameseSentence: 'Quả đu đủ có rất nhiều hạt nhỏ màu đen.' }
+    { word: 'Apple', translation: 'Quả táo', emoji: '🍎', phonetic: '/ˈæp.l̩/', sentence: 'An apple a day keeps the doctor away.', vietnameseSentence: 'Ăn một quả táo mỗi ngày giúp bé khỏe mạnh.' },
+    { word: 'Banana', translation: 'Quả chuối', emoji: '🍌', phonetic: '/bəˈnɑː.nə/', sentence: 'Monkeys love to eat bananas.', vietnameseSentence: 'Khỉ rất thích ăn chuối.' },
+    { word: 'Orange', translation: 'Quả cam', emoji: '🍊', phonetic: '/ˈɒr.ɪndʒ/', sentence: 'Orange juice is sweet and delicious.', vietnameseSentence: 'Nước cam ngọt và rất ngon.' },
+    { word: 'Mango', translation: 'Quả xoài', emoji: '🥭', phonetic: '/ˈmæŋ.ɡəʊ/', sentence: 'Yellow mangoes are very sweet.', vietnameseSentence: 'Xoài vàng rất là ngọt.' },
+    { word: 'Grape', translation: 'Quả nho', emoji: '🍇', phonetic: '/ɡreɪp/', sentence: 'I have a bowl of purple grapes.', vietnameseSentence: 'Tớ có một bát nho tím.' },
+    { word: 'Watermelon', translation: 'Quả dưa hấu', emoji: '🍉', phonetic: '/ˈwɔː.təˌmel.ən/', sentence: 'Watermelon is green outside and red inside.', vietnameseSentence: 'Dưa hấu vỏ xanh và ruột đỏ.' }
   ],
   colors: [
-    { word: 'Turquoise', translation: 'Xanh ngọc', emoji: '💎', colorHex: '#40E0D0', phonetic: '/ˈtɜː.kwɔɪz/', sentence: 'The ocean water is beautiful turquoise.', vietnameseSentence: 'Nước đại dương có màu xanh ngọc rất đẹp.' },
-    { word: 'Golden', translation: 'Màu vàng kim', emoji: '👑', colorHex: '#FFD700', phonetic: '/ˈgəʊl.dən/', sentence: 'The princess wore a golden crown.', vietnameseSentence: 'Công chúa đội một chiếc vương miện vàng kim.' },
-    { word: 'Silver', translation: 'Màu bạc', emoji: '🪙', colorHex: '#C0C0C0', phonetic: '/ˈsɪl.vər/', sentence: 'The shiny star is silver.', vietnameseSentence: 'Ngôi sao lấp lánh có màu bạc.' },
-    { word: 'Rainbow', translation: 'Bầu trời cầu vồng', emoji: '🌈', colorHex: '#FF007F', phonetic: '/ˈreɪn.bəʊ/', sentence: 'Look at the colorful rainbow in the sky!', vietnameseSentence: 'Hãy nhìn cầu vồng rực rỡ sắc màu trên bầu trời kìa!' },
-    { word: 'Indigo', translation: 'Màu xanh chàm', emoji: '🔮', colorHex: '#4B0082', phonetic: '/ˈɪn.dɪ.gəʊ/', sentence: 'Indigo is a dark blue color.', vietnameseSentence: 'Màu chàm là một tông màu xanh đậm.' },
-    { word: 'Violet', translation: 'Màu tím violet', emoji: '🪻', colorHex: '#8F00FF', phonetic: '/ˈvaɪə.lət/', sentence: 'Violets are tiny purple flowers.', vietnameseSentence: 'Hoa violet là những bông hoa nhỏ màu tím.' },
-    { word: 'Crimson', translation: 'Màu đỏ tươi / thẫm', emoji: '🌹', colorHex: '#DC143C', phonetic: '/ˈkrɪm.zən/', sentence: 'The autumn leaves turned crimson red.', vietnameseSentence: 'Những chiếc lá mùa thu chuyển sang màu đỏ tươi.' }
+    { word: 'Red', translation: 'Màu đỏ', emoji: '🔴', colorHex: '#EF4444', phonetic: '/red/', sentence: 'The fire truck is bright red.', vietnameseSentence: 'Xe cứu hỏa có màu đỏ tươi.' },
+    { word: 'Blue', translation: 'Màu xanh dương', emoji: '🔵', colorHex: '#3B82F6', phonetic: '/bluː/', sentence: 'The sky is blue today.', vietnameseSentence: 'Bầu trời hôm nay có màu xanh dương.' },
+    { word: 'Green', translation: 'Màu xanh lá', emoji: '🟢', colorHex: '#10B981', phonetic: '/ɡriːn/', sentence: 'Grass is green and soft.', vietnameseSentence: 'Cỏ xanh lá và mềm mại.' },
+    { word: 'Yellow', translation: 'Màu vàng', emoji: '🟡', colorHex: '#F59E0B', phonetic: '/ˈjel.əʊ/', sentence: 'The bright sun is yellow.', vietnameseSentence: 'Mặt trời tỏa sáng có màu vàng.' },
+    { word: 'Pink', translation: 'Màu hồng', emoji: '🌸', colorHex: '#EC4899', phonetic: '/pɪŋk/', sentence: 'The beautiful flower is pink.', vietnameseSentence: 'Bông hoa xinh đẹp có màu hồng.' },
+    { word: 'Orange', translation: 'Màu cam', emoji: '🔸', colorHex: '#F97316', phonetic: '/ˈɒr.ɪndʒ/', sentence: 'Pumpkins are orange.', vietnameseSentence: 'Quả bí ngô có màu cam.' }
   ],
   numbers: [
-    { word: 'Eleven', translation: 'Số mười một', emoji: '1️⃣1️⃣', val: 11, phonetic: '/ɪˈlev.ən/', sentence: 'There are eleven players in a football team.', vietnameseSentence: 'Có mười một cầu thủ trong một đội bóng đá.' },
-    { word: 'Twelve', translation: 'Số mười hai', emoji: '1️⃣2️⃣', val: 12, phonetic: '/twelv/', sentence: 'A clock shows twelve numbers.', vietnameseSentence: 'Đồng hồ hiển thị mười hai chữ số.' },
-    { word: 'Fifteen', translation: 'Số mười lăm', emoji: '1️⃣5️⃣', val: 15, phonetic: '/ˌfɪfˈtiːn/', sentence: 'I have fifteen coloring pencils.', vietnameseSentence: 'Tớ có mười lăm chiếc bút chì màu.' },
-    { word: 'Twenty', translation: 'Số hai mươi', emoji: '2️⃣0️⃣', val: 20, phonetic: '/ˈtwen.ti/', sentence: 'Ten plus ten equals twenty.', vietnameseSentence: 'Mười cộng mười bằng hai mươi.' },
-    { word: 'Plus', translation: 'Phép cộng / Dấu cộng', emoji: '➕', val: '+', phonetic: '/plʌs/', sentence: 'Three plus two is five.', vietnameseSentence: 'Ba cộng hai bằng năm.' },
-    { word: 'Minus', translation: 'Phép trừ / Dấu trừ', emoji: '➖', val: '-', phonetic: '/ˈmaɪ.nəs/', sentence: 'Five minus one equals four.', vietnameseSentence: 'Năm trừ một bằng bốn.' },
-    { word: 'Double', translation: 'Gấp đôi / Nhân đôi', emoji: '👥', val: 'x2', phonetic: '/ˈdʌb.əl/', sentence: 'Double of two is four.', vietnameseSentence: 'Gấp đôi của hai là bốn.' }
+    { word: 'One', translation: 'Số một', emoji: '1️⃣', val: 1, phonetic: '/wʌn/', sentence: 'I have one nose.', vietnameseSentence: 'Tớ có một chiếc mũi.' },
+    { word: 'Five', translation: 'Số năm', emoji: '5️⃣', val: 5, phonetic: '/faɪv/', sentence: 'A hand has five fingers.', vietnameseSentence: 'Một bàn tay có năm ngón tay.' },
+    { word: 'Ten', translation: 'Số mười', emoji: '🔟', val: 10, phonetic: '/ten/', sentence: 'I have ten cute toes.', vietnameseSentence: 'Tớ có mười ngón chân đáng yêu.' },
+    { word: 'Plus', translation: 'Phép cộng', emoji: '➕', val: '+', phonetic: '/plʌs/', sentence: 'Two plus three is five.', vietnameseSentence: 'Hai cộng ba bằng năm.' },
+    { word: 'Minus', translation: 'Phép trừ', emoji: '➖', val: '-', phonetic: '/ˈmaɪ.nəs/', sentence: 'Five minus two is three.', vietnameseSentence: 'Năm trừ hai bằng ba.' }
   ],
   greetings: [
-    { word: 'Good morning', translation: 'Chào buổi sáng', emoji: '🌅', phonetic: '/ˌgʊd ˈmɔː.nɪŋ/', sentence: 'Good morning, how are you today?', vietnameseSentence: 'Chào buổi sáng, hôm nay bạn thế nào?' },
-    { word: 'Good afternoon', translation: 'Chào buổi chiều', emoji: '☀️', phonetic: '/ˌgʊd ɑːf.təˈnuːn/', sentence: 'Good afternoon, nice to meet you.', vietnameseSentence: 'Chào buổi chiều, rất vui được gặp bạn.' },
-    { word: 'Welcome', translation: 'Chào mừng / Chào đón', emoji: '🤝', phonetic: '/ˈwel.kəm/', sentence: 'Welcome to our English classroom!', vietnameseSentence: 'Chào mừng các bạn đến với lớp học tiếng Anh!' },
-    { word: 'Listen carefully', translation: 'Lắng nghe cẩn thận', emoji: '👂', phonetic: '/ˈlɪs.ən ˈkeə.fʊl.i/', sentence: 'Please listen carefully to the teacher.', vietnameseSentence: 'Vui lòng lắng nghe cẩn thận lời cô giáo giảng.' },
-    { word: 'Think twice', translation: 'Suy nghĩ kỹ', emoji: '🧠', phonetic: '/θɪŋk twaɪs/', sentence: 'Think twice before you answer.', vietnameseSentence: 'Hãy suy nghĩ kỹ trước khi bạn trả lời.' },
-    { word: 'Share toys', translation: 'Chia sẻ đồ chơi', emoji: '🎁', phonetic: '/ʃeər tɔɪz/', sentence: 'It is good to share toys with friends.', vietnameseSentence: 'Chia sẻ đồ chơi với bạn bè là một việc làm tốt.' },
-    { word: 'Write letters', translation: 'Viết chữ cái', emoji: '✍️', phonetic: '/raɪt ˈlet.əz/', sentence: 'We practice how to write letters on paper.', vietnameseSentence: 'Chúng tớ tập viết các chữ cái lên giấy.' }
+    { word: 'Hello', translation: 'Xin chào', emoji: '👋', phonetic: '/heˈləʊ/', sentence: 'Hello, nice to meet you!', vietnameseSentence: 'Xin chào, rất vui được gặp bạn!' },
+    { word: 'Goodbye', translation: 'Tạm biệt', emoji: '🙋', phonetic: '/ˌɡʊdˈbaɪ/', sentence: 'Goodbye, see you tomorrow!', vietnameseSentence: 'Tạm biệt, hẹn gặp lại ngày mai!' },
+    { word: 'Stand up', translation: 'Đứng lên', emoji: '🧍', phonetic: '/stænd ʌp/', sentence: 'Please stand up quietly.', vietnameseSentence: 'Các em hãy đứng lên một cách trật tự nhé.' },
+    { word: 'Sit down', translation: 'Ngồi xuống', emoji: '🧎', phonetic: '/sɪt daʊn/', sentence: 'Please sit down on your chair.', vietnameseSentence: 'Mời em ngồi xuống ghế.' },
+    { word: 'Open book', translation: 'Mở sách', emoji: '📖', phonetic: '/ˈəʊ.pən bʊk/', sentence: 'Open your English book, please.', vietnameseSentence: 'Vui lòng mở sách Tiếng Anh ra nhé.' }
   ]
 };
 
 // Grade 3 Data (Focus on speaking, sentence structures)
 const VOCABULARY_DATA_G3 = {
   family: [
-    { word: 'Father', translation: 'Bố / Cha', emoji: '👨', phonetic: '/ˈfɑː.ðər/', sentence: 'My father is a doctor.', vietnameseSentence: 'Bố của tớ là một bác sĩ.' },
-    { word: 'Mother', translation: 'Mẹ', emoji: '👩', phonetic: '/ˈmʌð.ər/', sentence: 'This is my mother.', vietnameseSentence: 'Đây là mẹ của tớ.' },
-    { word: 'Brother', translation: 'Anh / Em trai', emoji: '👦', phonetic: '/ˈbrʌð.ər/', sentence: 'He is my big brother.', vietnameseSentence: 'Anh ấy là anh trai của tớ.' },
-    { word: 'Sister', translation: 'Chị / Em gái', emoji: '👧', phonetic: '/ˈsɪs.tər/', sentence: 'She is my little sister.', vietnameseSentence: 'Em ấy là em gái của tớ.' },
-    { word: 'Living room', translation: 'Phòng khách', emoji: '🛋️', phonetic: '/ˈlɪv.ɪŋ ˌruːm/', sentence: 'My family watches TV in the living room.', vietnameseSentence: 'Gia đình tớ xem ti vi ở phòng khách.' },
-    { word: 'Bedroom', translation: 'Phòng ngủ', emoji: '🛏️', phonetic: '/ˈbed.ruːm/', sentence: 'He is sleeping in the bedroom.', vietnameseSentence: 'Cậu ấy đang ngủ trong phòng ngủ.' }
+    { word: 'Father', translation: 'Bố', emoji: '👨', phonetic: '/ˈfɑː.ðər/', sentence: 'My father is a kind doctor.', vietnameseSentence: 'Bố của tớ là một bác sĩ nhân hậu.' },
+    { word: 'Mother', translation: 'Mẹ', emoji: '👩', phonetic: '/ˈmʌð.ər/', sentence: 'My mother cooks delicious food.', vietnameseSentence: 'Mẹ của tớ nấu đồ ăn rất ngon.' },
+    { word: 'Brother', translation: 'Anh/Em trai', emoji: '👦', phonetic: '/ˈbrʌð.ər/', sentence: 'My brother likes playing football.', vietnameseSentence: 'Anh trai tớ thích đá bóng.' },
+    { word: 'Sister', translation: 'Chị/Em gái', emoji: '👧', phonetic: '/ˈsɪs.tər/', sentence: 'My sister has beautiful long hair.', vietnameseSentence: 'Chị gái tớ có mái tóc dài xinh đẹp.' },
+    { word: 'Grandfather', translation: 'Ông', emoji: '👴', phonetic: '/ˈɡræn.fɑː.ðər/', sentence: 'My grandfather tells funny stories.', vietnameseSentence: 'Ông của tớ kể những câu chuyện rất vui.' },
+    { word: 'Grandmother', translation: 'Bà', emoji: '👵', phonetic: '/ˈræn.mʌð.ər/', sentence: 'My grandmother gives me sweet candies.', vietnameseSentence: 'Bà của tớ cho tớ những viên kẹo ngọt.' }
   ],
   school: [
-    { word: 'Pencil', translation: 'Bút chì', emoji: '✏️', phonetic: '/ˈpen.səl/', sentence: 'I have a yellow pencil.', vietnameseSentence: 'Tớ có một chiếc bút chì màu vàng.' },
-    { word: 'Notebook', translation: 'Vở viết', emoji: '📓', phonetic: '/ˈnəʊt.bʊk/', sentence: 'Open your notebook, please.', vietnameseSentence: 'Vui lòng mở vở của bạn ra.' },
-    { word: 'Eraser', translation: 'Cục tẩy', emoji: '🧽', phonetic: '/ɪˈreɪ.zər/', sentence: 'Can I borrow your eraser?', vietnameseSentence: 'Tớ có thể mượn cục tẩy của bạn không?' },
-    { word: 'English', translation: 'Môn Tiếng Anh', emoji: '🇬🇧', phonetic: '/ˈɪŋ.ɡlɪʃ/', sentence: 'I study English on Monday.', vietnameseSentence: 'Tớ học Tiếng Anh vào thứ Hai.' },
-    { word: 'Maths', translation: 'Môn Toán', emoji: '➕', phonetic: '/mæθs/', sentence: 'Do you like Maths?', vietnameseSentence: 'Bạn có thích học môn Toán không?' },
-    { word: 'Music', translation: 'Môn Âm nhạc', emoji: '🎵', phonetic: '/ˈmjuː.zɪk/', sentence: 'We sing a song in Music class.', vietnameseSentence: 'Chúng tớ hát một bài trong giờ Âm nhạc.' }
+    { word: 'Pencil', translation: 'Bút chì', emoji: '✏️', phonetic: '/ˈpen.səl/', sentence: 'I draw a cat with my pencil.', vietnameseSentence: 'Tớ vẽ một con mèo bằng bút chì của mình.' },
+    { word: 'Book', translation: 'Sách', emoji: '📚', phonetic: '/bʊk/', sentence: 'I like reading this comic book.', vietnameseSentence: 'Tớ thích đọc cuốn sách truyện tranh này.' },
+    { word: 'Ruler', translation: 'Thước kẻ', emoji: '📏', phonetic: '/ˈruː.lər/', sentence: 'Use a ruler to draw straight lines.', vietnameseSentence: 'Hãy dùng thước kẻ để vẽ những đường thẳng.' },
+    { word: 'Bag', translation: 'Cặp sách', emoji: '🎒', phonetic: '/bæɡ/', sentence: 'My school bag is blue and heavy.', vietnameseSentence: 'Chiếc cặp sách của tớ màu xanh dương và khá nặng.' },
+    { word: 'Pen', translation: 'Bút mực', emoji: '✒️', phonetic: '/pen/', sentence: 'Write your name with a blue pen.', vietnameseSentence: 'Hãy viết tên của bạn bằng bút mực màu xanh.' }
   ],
   hobbies: [
-    { word: 'Doll', translation: 'Búp bê', emoji: '🪆', phonetic: '/dɒl/', sentence: 'She plays with a beautiful doll.', vietnameseSentence: 'Em ấy chơi với một cô búp bê xinh đẹp.' },
-    { word: 'Ball', translation: 'Quả bóng', emoji: '⚽', phonetic: '/bɔːl/', sentence: 'The boys kick the ball in the yard.', vietnameseSentence: 'Các bạn nam đá bóng ở ngoài sân.' },
-    { word: 'Kite', translation: 'Con diều', emoji: '🪁', phonetic: '/kaɪt/', sentence: 'Look at my red kite.', vietnameseSentence: 'Hãy nhìn con diều màu đỏ của tớ kìa.' },
-    { word: 'Sing', translation: 'Hát', emoji: '🎤', phonetic: '/sɪŋ/', sentence: 'I like to sing English songs.', vietnameseSentence: 'Tớ thích hát các bài hát tiếng Anh.' },
-    { word: 'Dance', translation: 'Nhảy múa', emoji: '💃', phonetic: '/dɑːns/', sentence: 'She likes to dance in the room.', vietnameseSentence: 'Cô ấy thích nhảy múa ở trong phòng.' },
-    { word: 'Draw', translation: 'Vẽ', emoji: '🎨', phonetic: '/drɔː/', sentence: 'I draw a blue bird.', vietnameseSentence: 'Tớ vẽ một con chim màu xanh dương.' }
+    { word: 'Football', translation: 'Bóng đá', emoji: '⚽', phonetic: '/ˈfʊt.bɔːl/', sentence: 'The boys play football after school.', vietnameseSentence: 'Các bạn nam đá bóng sau giờ học.' },
+    { word: 'Bicycle', translation: 'Xe đạp', emoji: '🚲', phonetic: '/ˈbaɪ.sɪ.kl̩/', sentence: 'I ride my bicycle in the park.', vietnameseSentence: 'Tớ đi xe đạp trong công viên.' },
+    { word: 'Drawing', translation: 'Vẽ tranh', emoji: '🎨', phonetic: '/ˈdrɔː.ɪŋ/', sentence: 'Drawing makes me feel very happy.', vietnameseSentence: 'Vẽ tranh làm tớ cảm thấy rất hạnh phúc.' },
+    { word: 'Singing', translation: 'Ca hát', emoji: '🎤', phonetic: '/ˈsɪŋ.ɪŋ/', sentence: 'She loves singing sweet songs.', vietnameseSentence: 'Cô ấy yêu ca hát những bài hát ngọt ngào.' },
+    { word: 'Chess', translation: 'Chơi cờ', emoji: '♟️', phonetic: '/tʃes/', sentence: 'I play chess with my father.', vietnameseSentence: 'Tớ chơi cờ cùng với bố.' }
   ],
   weather: [
-    { word: 'Sunny', translation: 'Có nắng', emoji: '☀️', phonetic: '/ˈsʌn.i/', sentence: 'It is sunny and hot today.', vietnameseSentence: 'Hôm nay trời nắng và nóng.' },
-    { word: 'Rainy', translation: 'Có mưa', emoji: '🌧️', phonetic: '/ˈreɪ.ni/', sentence: 'Don’t go out on a rainy day.', vietnameseSentence: 'Đừng đi ra ngoài vào ngày mưa nhé.' },
-    { word: 'Windy', translation: 'Có gió', emoji: '💨', phonetic: '/ˈwɪn.di/', sentence: 'It is windy, let’s fly a kite.', vietnameseSentence: 'Trời có gió, chúng mình đi thả diều nào.' },
-    { word: 'Hat', translation: 'Cái mũ', emoji: '👒', phonetic: '/hæt/', sentence: 'Put on your hat.', vietnameseSentence: 'Đội mũ của con vào đi.' },
-    { word: 'Shoes', translation: 'Đôi giày', emoji: '👟', phonetic: '/ʃuːz/', sentence: 'These shoes are white.', vietnameseSentence: 'Đôi giày này màu trắng.' },
-    { word: 'Coat', translation: 'Áo khoác', emoji: '🧥', phonetic: '/kəʊt/', sentence: 'Put on your warm coat.', vietnameseSentence: 'Mặc áo khoác ấm vào đi con.' }
+    { word: 'Sunny', translation: 'Nắng', emoji: '☀️', phonetic: '/ˈsʌn.i/', sentence: 'It is a beautiful sunny day.', vietnameseSentence: 'Hôm nay là một ngày nắng đẹp trời.' },
+    { word: 'Rainy', translation: 'Mưa', emoji: '🌧️', phonetic: '/ˈreɪ.ni/', sentence: 'We need umbrellas on a rainy day.', vietnameseSentence: 'Chúng ta cần ô vào ngày mưa.' },
+    { word: 'Windy', translation: 'Gió', emoji: '💨', phonetic: '/ˈwɪn.di/', sentence: 'It is very windy outside.', vietnameseSentence: 'Ngoài trời đang rất nhiều gió.' },
+    { word: 'Cloudy', translation: 'Mây mù', emoji: '☁️', phonetic: '/ˈklaʊ.di/', sentence: 'The sky is cloudy and dark.', vietnameseSentence: 'Bầu trời nhiều mây và tối tăm.' },
+    { word: 'Coat', translation: 'Áo khoác', emoji: '🧥', phonetic: '/kəʊt/', sentence: 'Wear a warm coat in winter.', vietnameseSentence: 'Hãy mặc áo khoác ấm vào mùa đông.' }
   ]
 };
 
@@ -1074,10 +1063,10 @@ function renderBuilderSpelling() {
     const slot = document.createElement('div');
     const spelledVal = state.builderCurrentSpelling[index];
     
-    slot.className = "w-14 h-14 border-4 border-dashed border-indigo-300 rounded-xl bg-white/60 flex justify-center items-center text-3xl font-extrabold shadow-inner select-none";
+    slot.className = "w-14 h-14 border-4 border-dashed border-indigo-300 rounded-xl bg-white/60 flex justify-center items-center text-3xl font-bold shadow-inner select-none";
     
     if (spelledVal) {
-      slot.className = "w-14 h-14 border-4 border-indigo-500 rounded-xl bg-indigo-50 text-indigo-700 flex justify-center items-center text-3xl font-extrabold shadow-md transform scale-105 transition duration-150 select-none";
+      slot.className = "w-14 h-14 border-4 border-indigo-500 rounded-xl bg-indigo-50 text-indigo-700 flex justify-center items-center text-3xl font-bold shadow-md transform scale-105 transition duration-150 select-none";
       slot.innerText = spelledVal.letter;
       
       slot.onclick = () => {
@@ -1107,10 +1096,10 @@ function renderBuilderLetters() {
     tile.innerText = letter;
     
     if (isUsed) {
-      tile.className = "w-12 h-12 bg-gray-200 border-4 border-gray-300 text-gray-400 rounded-xl font-extrabold text-2xl shadow-inner cursor-not-allowed select-none opacity-40";
+      tile.className = "w-12 h-12 bg-gray-200 border-4 border-gray-300 text-gray-400 rounded-xl font-bold text-2xl shadow-inner cursor-not-allowed select-none opacity-40";
       tile.disabled = true;
     } else {
-      tile.className = "w-12 h-12 bg-white hover:bg-yellow-50 border-4 border-yellow-400 text-yellow-600 rounded-xl font-extrabold text-2xl shadow-md transition transform hover:-translate-y-1 active:translate-y-0 select-none";
+      tile.className = "w-12 h-12 bg-white hover:bg-yellow-50 border-4 border-yellow-400 text-yellow-600 rounded-xl font-bold text-2xl shadow-md transition transform hover:-translate-y-1 active:translate-y-0 select-none";
       tile.onclick = () => {
         SoundEffects.playClick();
         if (state.builderCurrentSpelling.length < state.builderTargetWord.length) {
@@ -1137,7 +1126,7 @@ function checkBuilderWord() {
       
       const slots = document.getElementById('wb-spelling-slots').children;
       Array.from(slots).forEach(slot => {
-        slot.className = "w-14 h-14 border-4 border-green-500 rounded-xl bg-green-500 text-white flex justify-center items-center text-3xl font-extrabold shadow-md animate-correct-bounce select-none";
+        slot.className = "w-14 h-14 border-4 border-green-500 rounded-xl bg-green-500 text-white flex justify-center items-center text-3xl font-bold shadow-md animate-correct-bounce select-none";
       });
       
       setTimeout(() => {
@@ -1235,7 +1224,7 @@ function renderSentenceSpelling() {
     
     if (selectedIdxInScrambled !== undefined) {
       const wordText = state.sentenceScrambled[selectedIdxInScrambled];
-      slot.className = "px-4 py-2.5 border-4 border-indigo-500 rounded-2xl bg-indigo-50 text-indigo-800 text-xl font-extrabold shadow-md transform scale-105 transition cursor-pointer select-none";
+      slot.className = "px-4 py-2.5 border-4 border-indigo-500 rounded-2xl bg-indigo-50 text-indigo-800 text-xl font-bold shadow-md transform scale-105 transition cursor-pointer select-none";
       slot.innerText = wordText;
       
       // Click to remove word from spelling
@@ -1267,7 +1256,7 @@ function renderSentenceWordPool() {
       btn.className = "px-4 py-2 border-4 border-gray-200 bg-gray-100 text-gray-300 rounded-2xl font-bold text-lg cursor-not-allowed select-none opacity-30";
       btn.disabled = true;
     } else {
-      btn.className = "word-pill px-4 py-2 border-4 border-yellow-300 bg-white hover:bg-yellow-50 text-yellow-700 rounded-2xl font-extrabold text-lg shadow-md select-none";
+      btn.className = "word-pill px-4 py-2 border-4 border-yellow-300 bg-white hover:bg-yellow-50 text-yellow-700 rounded-2xl font-bold text-lg shadow-md select-none";
       btn.onclick = () => {
         SoundEffects.playClick();
         if (state.sentenceSelectedIndices.length < state.sentenceTargetWords.length) {
@@ -1295,7 +1284,7 @@ function checkSentenceSpelling() {
       // Style green
       const slots = document.getElementById('sb-spelling-slots').children;
       Array.from(slots).forEach(slot => {
-        slot.className = "px-4 py-2.5 border-4 border-green-500 rounded-2xl bg-green-500 text-white text-xl font-extrabold shadow-md animate-correct-bounce select-none";
+        slot.className = "px-4 py-2.5 border-4 border-green-500 rounded-2xl bg-green-500 text-white text-xl font-bold shadow-md animate-correct-bounce select-none";
       });
       
       setTimeout(() => {
@@ -1476,7 +1465,7 @@ function handleSpeechResultComparison(spoken) {
     Confetti.start();
     addStars(3);
     
-    feedbackMsg.innerHTML = '<span class="text-green-600 font-extrabold text-xl">🌟 Bé nói siêu chuẩn luôn! Tuyệt vời! (+3 ⭐)</span>';
+    feedbackMsg.innerHTML = '<span class="text-green-600 font-bold text-xl">🌟 Bé nói siêu chuẩn luôn! Tuyệt vời! (+3 ⭐)</span>';
     
     setTimeout(() => {
       advanceSpeakingIndex();
